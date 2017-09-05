@@ -1,0 +1,34 @@
+<template name="plans">
+	<div class="new-plan-container">
+		<section class="plan">
+			<table class="table table-striped">
+			  <thead>
+			    <tr>
+			      <th class="text-center">S No.</th>
+			      <th class="text-center">Title</th>
+			      <th class="text-center">Monthly Price</th>
+			      <th class="text-center">Quaterly Price</th>
+			      <th class="text-center">Half-Yearly Price</th>
+			      <th class="text-center">Yearly Price</th>
+			      <th class="text-center">List Of Product Types</th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			    {{#each plans}}
+				    <tr>
+				      <th class="text-center">{{counter @index }}</th>
+				      <th class="text-center">{{title}}</th>
+				      {{#each pricing_details}}
+				      	<th class="text-center">&#8377; {{price}}.00</th>
+				      {{/each}}
+				      
+				      <th class="text-center"> {{#each visible_product_types}}
+				      	{{this}}
+				      {{/each}} </th>
+				    </tr>
+			    {{/each}}
+			  </tbody>
+			</table>
+		</section>
+	</div>
+</template>
