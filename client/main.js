@@ -3,7 +3,7 @@ import { ReactiveVar } from 'meteor/reactive-var';
 import { Plans } from '../collections/plans.js';
 
 Template.addPlan.events({
-	'click .btn'(){
+	'click button[type="submit"]'(){
 		alert("Saving Plan")
 	}
 });
