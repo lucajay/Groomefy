@@ -4,3 +4,6 @@ $ meteor npm install --save babel-runtime
 $ meteor npm install --save bcrypt
 cd {go to the directary}
 $ meteor
+
+Username- ajay.verma@overcart.com
+Password- ajay.verma
